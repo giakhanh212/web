@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+}
+ :root{
+    --color: #FC6600;
+    --color2:#1598d4;
+
+ }
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ header img{
+    width: 110px;
+ }
+.menu{
+    background-color: var(--color2);
+    color: white;
+    font-size: 22px;
+    padding: 7px;
+ }
+ nav{
+    background-color: var(--color2);
+    padding: 10px;
+    text-align: center;
+ }
+ nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 5px;
+ }
+ .slide{
+    position: relative;
+    text-align: center;
+ }
+ .slide .bi-caret-left{
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+ }
+ .slide .bi-caret-right{
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+
+ }
+ .slide .list{
+    position: absolute;
+    bottom:5% ;
+    text-align: center;
+    font-size: 5rem;
+    left: calc(50% - 40px);
+ }
+ .list-tour div{
+    overflow: hidden;
+ }
+ .list-tour img:hover{
+    transform: scale(1.2);
+ }
+ .list-tour article {
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.list-tour img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: 0.5s;
+}
+.list-tour p{
+    padding: 10px;
+}
+.khachhang {
+    text-align: center;
+}
+
+.khachhang img {
+    border-radius: 50%;
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+
+}
+.khachhang article{
+    padding: 10px;
+}
+.khachhang p i{
+    color: gold;
+}
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+.grid-container img {
+    width: 100%;
+}
+
+.grid-container {
+    padding: 10px;
+}
+footer section{
+    margin-left: 12%;
+    margin-right: 12%;
+    display: flex;
+    background-color: #1598d4;
+}
+
+
+
+@media screen and (min-width:240px) {
+
+}
+
+/* Điện thoại ngang và Máy tính bảng dọc*/
+@media screen and (min-width:768px) {
+    .coLumn-3,.column-4{
+        flex: 25%;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .list-tour{
+        display: flex;
+    }
+    .khachhang {
+        display: flex;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'item1 item1 item2 item3'
+            'item1 item1 item4 item5';
+        gap: 10px;
+    }
+
+}
+
+
+
+/* Laptop/Desktop  và máy tính bảng ngang*/
+@media screen and (min-width:1024px) {
+    .login article{
+        display: flex;
+    }
+    main,header{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+
+}
+.login{
+    height: 100vh;
+    background-image: -webkit-linear-gradient(top left,#1598d4,#1598d4);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .login h3{
+    color: white;
+    
+    }
+    
+    .login form {
+    text-aLign: left;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    
+    }
+    
+    .login #inputPass,#inputUser{
+    width: 95%;
+    height: 25px;
+    margin-bottom: 10px;
+    }
+    
+    .login a {
+    color: white;
+    text-decoration: none;
+    
+    }
+    
+    .login button{
+    height: 30px;
+    padding: 0 10px;
+    margin: 10px 0;
+    
+    }
+*{
+box-sizing: border-box;
+}
+.gallery{
+display: flex;
+flex-wrap: wrap;
+}
+
+.gallery img{
+width: 100%;
+}
+
+.column-3 img{
+height: 33.33%;
+object-fit: cover;
+
+}
+
+.column-4 img{
+height: 25%;
+object-fit:cover;
+}
+
+.column-3,.column-4{
+   flex: 50%;
+   padding: 2px;
+   height: 500px;
+}

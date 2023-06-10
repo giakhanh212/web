@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+}
+ :root{
+    --color: #FC6600;
+    --color2:#1598d4;
+
+ }
+ header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ header img{
+    width: 110px;
+ }
+.menu{
+    background-color: var(--color2);
+    color: white;
+    font-size: 22px;
+    padding: 7px;
+ }
+ nav{
+    background-color: var(--color2);
+    padding: 10px;
+    text-align: center;
+ }
+ nav a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 5px;
+ }
+ .slide{
+    position: relative;
+    text-align: center;
+ }
+ .slide .bi-caret-left{
+    position: absolute;
+    left: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+ }
+ .slide .bi-caret-right{
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    font-size: 2rem;
+    color: white;
+
+ }
+ .slide .list{
+    position: absolute;
+    bottom:5% ;
+    text-align: center;
+    font-size: 5rem;
+    left: calc(50% - 40px);
+ }
+ .list-tour article {
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.list-tour img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.list-tour p{
+    padding: 10px;
+}
+.gioithieu{
+    color: aquamarine;
+}
+
+
+
+@media screen and (min-width:240px) {
+
+}
+
+/* Điện thoại ngang và Máy tính bảng dọc*/
+@media screen and (min-width:768px) {
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        display: none;
+    }
+    .list-tour{
+        display: flex;
+    }
+
+}
+
+
+
+/* Laptop/Desktop  và máy tính bảng ngang*/
+@media screen and (min-width:1024px) {
+    main,header{
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+}
